@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF023A2425500644952 /* AppDelegate.swift */; };
+		F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF223A2425500644952 /* SceneDelegate.swift */; };
+		F64AFBF823A2425500644952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64AFBF623A2425500644952 /* Main.storyboard */; };
+		F64AFBFA23A2425700644952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64AFBF923A2425700644952 /* Assets.xcassets */; };
+		F64AFBFD23A2425700644952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64AFBFB23A2425700644952 /* LaunchScreen.storyboard */; };
+		F64AFC0523A2427E00644952 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFC0423A2427E00644952 /* StartViewController.swift */; };
+		F64AFC0A23A2447800644952 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFC0923A2447800644952 /* CustomTabBarItem.swift */; };
+		F64AFC0E23A245E800644952 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64AFC0C23A245E800644952 /* CollectionViewCell.xib */; };
+		F64AFC1223A2554500644952 /* PageCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64AFC1023A2554500644952 /* PageCollectionView.xib */; };
+		F64AFC1423A38D4600644952 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = F64AFC1323A38D4600644952 /* sunny.png */; };
+		F64AFC1623A38D4D00644952 /* rainy.png in Resources */ = {isa = PBXBuildFile; fileRef = F64AFC1523A38D4D00644952 /* rainy.png */; };
+		F64AFC1823A394C100644952 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = F64AFC1723A394C100644952 /* cloudy.png */; };
+		F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D7C23A6BE49002A79D3 /* ADPageViewController.swift */; };
+		F6783D8123A812AA002A79D3 /* TopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D7F23A812AA002A79D3 /* TopCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F64AFBED23A2425500644952 /* ClothesShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothesShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64AFBF023A2425500644952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F64AFBF223A2425500644952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F64AFBF723A2425500644952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F64AFBF923A2425700644952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F64AFBFC23A2425700644952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F64AFBFE23A2425700644952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64AFC0423A2427E00644952 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		F64AFC0923A2447800644952 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		F64AFC0C23A245E800644952 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		F64AFC1023A2554500644952 /* PageCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCollectionView.xib; sourceTree = "<group>"; };
+		F64AFC1323A38D4600644952 /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
+		F64AFC1523A38D4D00644952 /* rainy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainy.png; sourceTree = "<group>"; };
+		F64AFC1723A394C100644952 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
+		F6783D7C23A6BE49002A79D3 /* ADPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADPageViewController.swift; sourceTree = "<group>"; };
+		F6783D7F23A812AA002A79D3 /* TopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F64AFBEA23A2425500644952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F64AFBE423A2425500644952 = {
+			isa = PBXGroup;
+			children = (
+				F64AFBEF23A2425500644952 /* ClothesShop */,
+				F64AFBEE23A2425500644952 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F64AFBEE23A2425500644952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F64AFBED23A2425500644952 /* ClothesShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F64AFBEF23A2425500644952 /* ClothesShop */ = {
+			isa = PBXGroup;
+			children = (
+				F64AFBF023A2425500644952 /* AppDelegate.swift */,
+				F64AFBF223A2425500644952 /* SceneDelegate.swift */,
+				F64AFC0423A2427E00644952 /* StartViewController.swift */,
+				F64AFC0823A2446000644952 /* CustomUI */,
+				F64AFC0723A2429800644952 /* Models */,
+				F64AFC0623A2428500644952 /* TabControllers */,
+				F64AFBF623A2425500644952 /* Main.storyboard */,
+				F64AFBF923A2425700644952 /* Assets.xcassets */,
+				F64AFBFB23A2425700644952 /* LaunchScreen.storyboard */,
+				F64AFBFE23A2425700644952 /* Info.plist */,
+				F64AFC1723A394C100644952 /* cloudy.png */,
+				F64AFC1323A38D4600644952 /* sunny.png */,
+				F64AFC1523A38D4D00644952 /* rainy.png */,
+			);
+			path = ClothesShop;
+			sourceTree = "<group>";
+		};
+		F64AFC0623A2428500644952 /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabControllers;
+			sourceTree = "<group>";
+		};
+		F64AFC0723A2429800644952 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F64AFC0823A2446000644952 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				F6783D7F23A812AA002A79D3 /* TopCell.xib */,
+				F64AFC0C23A245E800644952 /* CollectionViewCell.xib */,
+				F64AFC1023A2554500644952 /* PageCollectionView.xib */,
+				F64AFC0923A2447800644952 /* CustomTabBarItem.swift */,
+				F6783D7C23A6BE49002A79D3 /* ADPageViewController.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F64AFBEC23A2425500644952 /* ClothesShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64AFC0123A2425700644952 /* Build configuration list for PBXNativeTarget "ClothesShop" */;
+			buildPhases = (
+				F64AFBE923A2425500644952 /* Sources */,
+				F64AFBEA23A2425500644952 /* Frameworks */,
+				F64AFBEB23A2425500644952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClothesShop;
+			productName = ClothesShop;
+			productReference = F64AFBED23A2425500644952 /* ClothesShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F64AFBE523A2425500644952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "ByungHoon Ann";
+				TargetAttributes = {
+					F64AFBEC23A2425500644952 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = F64AFBE823A2425500644952 /* Build configuration list for PBXProject "ClothesShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F64AFBE423A2425500644952;
+			productRefGroup = F64AFBEE23A2425500644952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F64AFBEC23A2425500644952 /* ClothesShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F64AFBEB23A2425500644952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6783D8123A812AA002A79D3 /* TopCell.xib in Resources */,
+				F64AFC1223A2554500644952 /* PageCollectionView.xib in Resources */,
+				F64AFBFD23A2425700644952 /* LaunchScreen.storyboard in Resources */,
+				F64AFBFA23A2425700644952 /* Assets.xcassets in Resources */,
+				F64AFC0E23A245E800644952 /* CollectionViewCell.xib in Resources */,
+				F64AFC1823A394C100644952 /* cloudy.png in Resources */,
+				F64AFC1623A38D4D00644952 /* rainy.png in Resources */,
+				F64AFC1423A38D4600644952 /* sunny.png in Resources */,
+				F64AFBF823A2425500644952 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F64AFBE923A2425500644952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */,
+				F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */,
+				F64AFC0523A2427E00644952 /* StartViewController.swift in Sources */,
+				F64AFC0A23A2447800644952 /* CustomTabBarItem.swift in Sources */,
+				F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F64AFBF623A2425500644952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64AFBF723A2425500644952 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F64AFBFB23A2425700644952 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64AFBFC23A2425700644952 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F64AFBFF23A2425700644952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F64AFC0023A2425700644952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F64AFC0223A2425700644952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClothesShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjsx.ClothesShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64AFC0323A2425700644952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClothesShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjsx.ClothesShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F64AFBE823A2425500644952 /* Build configuration list for PBXProject "ClothesShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64AFBFF23A2425700644952 /* Debug */,
+				F64AFC0023A2425700644952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64AFC0123A2425700644952 /* Build configuration list for PBXNativeTarget "ClothesShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64AFC0223A2425700644952 /* Debug */,
+				F64AFC0323A2425700644952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F64AFBE523A2425500644952 /* Project object */;
+}
