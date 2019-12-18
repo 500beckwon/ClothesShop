@@ -23,11 +23,15 @@ class StartViewController: UIViewController,CustomTabBarItemDelegate, UIScrollVi
     @IBOutlet weak var adFirstImageView: UIImageView!
     @IBOutlet weak var adSecondImageView: UIImageView!
     @IBOutlet weak var adThirdImageView: UIImageView!
-
-    
+   
+    var customMenuBar = CustomTabBarItem()
+    var firstcell = FirstItemColletionView()
+    var secondcell = SecondItemCollectionView()
+    var thirdcell = ThirdItemColletionView()
+    var forthcell = ForthItemColletionView()
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let text = ["할인제품","팬츠","티셔츠","아우터","니트","가디건","셔츠","가방","제품리뷰","문의","공지사항","이벤트"]
-    var customMenuBar = CustomTabBarItem()
+    
     var pageCollectionView : UICollectionView = {
         let collectionLayout = UICollectionViewFlowLayout()
         let collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: collectionLayout)
@@ -72,6 +76,7 @@ class StartViewController: UIViewController,CustomTabBarItemDelegate, UIScrollVi
     }
     
     func setADImageViews() {
+         //MARK:- 1 : 아우터, 2: 기모, 3: 5o%
         
     }
     
@@ -134,6 +139,7 @@ class StartViewController: UIViewController,CustomTabBarItemDelegate, UIScrollVi
     }
     
 }
+
 extension StartViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == pageCollectionView {
@@ -152,6 +158,8 @@ extension StartViewController : UICollectionViewDataSource, UICollectionViewDele
             let cell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: "pagecell", for: indexPath) as! PageCollectionCell
             
             cell.label.text = "\(indexPath.row + 1) View"
+           customContentCell(cell, indexPath)
+            
             return cell
         }
         
@@ -236,3 +244,51 @@ class PageCollectionCell : UICollectionViewCell {
         label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
 }
+
+//MARK: -Self UICustom Func
+extension StartViewController : ThirdItemColletionViewDelegate, SecondItemCollectionViewDelegate,ForthItemColletionViewDelegate, FirstItemColletionViewDelegate {
+    func customContentCell(_ cell:UICollectionViewCell,
+                           _ indexPath: IndexPath)
+                            {
+        
+        if indexPath.row == 0 {
+            cell.addSubview(firstcell)
+            firstcell.delegate = self
+            
+            firstcell.translatesAutoresizingMaskIntoConstraints = false
+            firstcell.leadingAnchor.constraint(equalTo: cell.contentView.leadingAnchor).isActive = true
+            firstcell.trailingAnchor.constraint(equalTo: cell.contentView.trailingAnchor).isActive = true
+            firstcell.topAnchor.constraint(equalTo: cell.contentView.topAnchor).isActive = true
+            firstcell.bottomAnchor.constraint(equalTo: cell.contentView.bottomAnchor).isActive = true
+        }else if indexPath.row == 1 {
+            cell.addSubview(secondcell)
+            secondcell.delegate = self
+            secondcell.translatesAutoresizingMaskIntoConstraints = false
+            secondcell.leadingAnchor.constraint(equalTo: cell.contentView.leadingAnchor).isActive = true
+            secondcell.trailingAnchor.constraint(equalTo: cell.contentView.trailingAnchor).isActive = true
+            secondcell.topAnchor.constraint(equalTo: cell.contentView.topAnchor).isActive = true
+            secondcell.bottomAnchor.constraint(equalTo: cell.contentView.bottomAnchor).isActive = true
+
+        }else if indexPath.row == 2 {
+            cell.addSubview(thirdcell)
+            thirdcell.delegate = self
+            thirdcell.translatesAutoresizingMaskIntoConstraints = false
+            thirdcell.leadingAnchor.constraint(equalTo: cell.contentView.leadingAnchor).isActive = true
+            thirdcell.trailingAnchor.constraint(equalTo: cell.contentView.trailingAnchor).isActive = true
+            thirdcell.topAnchor.constraint(equalTo: cell.contentView.topAnchor).isActive = true
+            thirdcell.bottomAnchor.constraint(equalTo: cell.contentView.bottomAnchor).isActive = true
+
+        }else if indexPath.row == 3 {
+            cell.addSubview(forthcell)
+            forthcell.delegate = self
+            forthcell.translatesAutoresizingMaskIntoConstraints = false
+            forthcell.leadingAnchor.constraint(equalTo: cell.contentView.leadingAnchor).isActive = true
+            forthcell.trailingAnchor.constraint(equalTo: cell.contentView.trailingAnchor).isActive = true
+            forthcell.topAnchor.constraint(equalTo: cell.contentView.topAnchor).isActive = true
+            forthcell.bottomAnchor.constraint(equalTo: cell.contentView.bottomAnchor).isActive = true
+
+        }
+    }
+}
+
+

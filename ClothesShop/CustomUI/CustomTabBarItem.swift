@@ -131,7 +131,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            self.label.textColor = isSelected ? .black : .purple
+            self.label.textColor = isSelected ? .black : .lightGray
         }
     }
     

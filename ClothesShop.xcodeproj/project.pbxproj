@@ -21,6 +21,18 @@
 		F64AFC1823A394C100644952 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = F64AFC1723A394C100644952 /* cloudy.png */; };
 		F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D7C23A6BE49002A79D3 /* ADPageViewController.swift */; };
 		F6783D8123A812AA002A79D3 /* TopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D7F23A812AA002A79D3 /* TopCell.xib */; };
+		F6783D8523A8D11B002A79D3 /* 냥3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F6783D8223A8D11A002A79D3 /* 냥3.jpeg */; };
+		F6783D8623A8D11B002A79D3 /* 냥2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F6783D8323A8D11B002A79D3 /* 냥2.jpeg */; };
+		F6783D8723A8D11B002A79D3 /* 냥1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F6783D8423A8D11B002A79D3 /* 냥1.jpeg */; };
+		F6783D8923A8DD62002A79D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D8823A8DD61002A79D3 /* DetailViewController.swift */; };
+		F6783D8D23AA16E0002A79D3 /* FirstItemColletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D8B23AA16E0002A79D3 /* FirstItemColletionView.swift */; };
+		F6783D8E23AA16E0002A79D3 /* FirstItemColletionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D8C23AA16E0002A79D3 /* FirstItemColletionView.xib */; };
+		F6783D9123AA216D002A79D3 /* SecondItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D8F23AA216D002A79D3 /* SecondItemCollectionView.swift */; };
+		F6783D9223AA216D002A79D3 /* SecondItemCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D9023AA216D002A79D3 /* SecondItemCollectionView.xib */; };
+		F6783D9523AA2197002A79D3 /* ThirdItemColletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D9323AA2197002A79D3 /* ThirdItemColletionView.swift */; };
+		F6783D9623AA2197002A79D3 /* ThirdItemColletionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D9423AA2197002A79D3 /* ThirdItemColletionView.xib */; };
+		F6783D9923AA21A6002A79D3 /* ForthItemColletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D9723AA21A6002A79D3 /* ForthItemColletionView.swift */; };
+		F6783D9A23AA21A6002A79D3 /* ForthItemColletionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D9823AA21A6002A79D3 /* ForthItemColletionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +52,18 @@
 		F64AFC1723A394C100644952 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
 		F6783D7C23A6BE49002A79D3 /* ADPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADPageViewController.swift; sourceTree = "<group>"; };
 		F6783D7F23A812AA002A79D3 /* TopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCell.xib; sourceTree = "<group>"; };
+		F6783D8223A8D11A002A79D3 /* 냥3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "냥3.jpeg"; sourceTree = "<group>"; };
+		F6783D8323A8D11B002A79D3 /* 냥2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "냥2.jpeg"; sourceTree = "<group>"; };
+		F6783D8423A8D11B002A79D3 /* 냥1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "냥1.jpeg"; sourceTree = "<group>"; };
+		F6783D8823A8DD61002A79D3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F6783D8B23AA16E0002A79D3 /* FirstItemColletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstItemColletionView.swift; sourceTree = "<group>"; };
+		F6783D8C23AA16E0002A79D3 /* FirstItemColletionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstItemColletionView.xib; sourceTree = "<group>"; };
+		F6783D8F23AA216D002A79D3 /* SecondItemCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondItemCollectionView.swift; sourceTree = "<group>"; };
+		F6783D9023AA216D002A79D3 /* SecondItemCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondItemCollectionView.xib; sourceTree = "<group>"; };
+		F6783D9323AA2197002A79D3 /* ThirdItemColletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdItemColletionView.swift; sourceTree = "<group>"; };
+		F6783D9423AA2197002A79D3 /* ThirdItemColletionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdItemColletionView.xib; sourceTree = "<group>"; };
+		F6783D9723AA21A6002A79D3 /* ForthItemColletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthItemColletionView.swift; sourceTree = "<group>"; };
+		F6783D9823AA21A6002A79D3 /* ForthItemColletionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForthItemColletionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +99,15 @@
 				F64AFBF023A2425500644952 /* AppDelegate.swift */,
 				F64AFBF223A2425500644952 /* SceneDelegate.swift */,
 				F64AFC0423A2427E00644952 /* StartViewController.swift */,
+				F6783D8823A8DD61002A79D3 /* DetailViewController.swift */,
 				F64AFC0823A2446000644952 /* CustomUI */,
 				F64AFC0723A2429800644952 /* Models */,
 				F64AFC0623A2428500644952 /* TabControllers */,
 				F64AFBF623A2425500644952 /* Main.storyboard */,
 				F64AFBF923A2425700644952 /* Assets.xcassets */,
+				F6783D8423A8D11B002A79D3 /* 냥1.jpeg */,
+				F6783D8323A8D11B002A79D3 /* 냥2.jpeg */,
+				F6783D8223A8D11A002A79D3 /* 냥3.jpeg */,
 				F64AFBFB23A2425700644952 /* LaunchScreen.storyboard */,
 				F64AFBFE23A2425700644952 /* Info.plist */,
 				F64AFC1723A394C100644952 /* cloudy.png */,
@@ -106,13 +134,29 @@
 		F64AFC0823A2446000644952 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				F6783D7F23A812AA002A79D3 /* TopCell.xib */,
-				F64AFC0C23A245E800644952 /* CollectionViewCell.xib */,
-				F64AFC1023A2554500644952 /* PageCollectionView.xib */,
+				F6783D8A23AA1692002A79D3 /* NibGroup */,
 				F64AFC0923A2447800644952 /* CustomTabBarItem.swift */,
+				F6783D8B23AA16E0002A79D3 /* FirstItemColletionView.swift */,
+				F6783D8F23AA216D002A79D3 /* SecondItemCollectionView.swift */,
+				F6783D9323AA2197002A79D3 /* ThirdItemColletionView.swift */,
+				F6783D9723AA21A6002A79D3 /* ForthItemColletionView.swift */,
 				F6783D7C23A6BE49002A79D3 /* ADPageViewController.swift */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		F6783D8A23AA1692002A79D3 /* NibGroup */ = {
+			isa = PBXGroup;
+			children = (
+				F6783D7F23A812AA002A79D3 /* TopCell.xib */,
+				F64AFC0C23A245E800644952 /* CollectionViewCell.xib */,
+				F64AFC1023A2554500644952 /* PageCollectionView.xib */,
+				F6783D8C23AA16E0002A79D3 /* FirstItemColletionView.xib */,
+				F6783D9023AA216D002A79D3 /* SecondItemCollectionView.xib */,
+				F6783D9423AA2197002A79D3 /* ThirdItemColletionView.xib */,
+				F6783D9823AA21A6002A79D3 /* ForthItemColletionView.xib */,
+			);
+			path = NibGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +220,17 @@
 				F6783D8123A812AA002A79D3 /* TopCell.xib in Resources */,
 				F64AFC1223A2554500644952 /* PageCollectionView.xib in Resources */,
 				F64AFBFD23A2425700644952 /* LaunchScreen.storyboard in Resources */,
+				F6783D8623A8D11B002A79D3 /* 냥2.jpeg in Resources */,
 				F64AFBFA23A2425700644952 /* Assets.xcassets in Resources */,
 				F64AFC0E23A245E800644952 /* CollectionViewCell.xib in Resources */,
+				F6783D8523A8D11B002A79D3 /* 냥3.jpeg in Resources */,
+				F6783D9223AA216D002A79D3 /* SecondItemCollectionView.xib in Resources */,
+				F6783D8E23AA16E0002A79D3 /* FirstItemColletionView.xib in Resources */,
+				F6783D8723A8D11B002A79D3 /* 냥1.jpeg in Resources */,
 				F64AFC1823A394C100644952 /* cloudy.png in Resources */,
 				F64AFC1623A38D4D00644952 /* rainy.png in Resources */,
+				F6783D9623AA2197002A79D3 /* ThirdItemColletionView.xib in Resources */,
+				F6783D9A23AA21A6002A79D3 /* ForthItemColletionView.xib in Resources */,
 				F64AFC1423A38D4600644952 /* sunny.png in Resources */,
 				F64AFBF823A2425500644952 /* Main.storyboard in Resources */,
 			);
@@ -193,10 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */,
+				F6783D9523AA2197002A79D3 /* ThirdItemColletionView.swift in Sources */,
 				F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */,
 				F64AFC0523A2427E00644952 /* StartViewController.swift in Sources */,
+				F6783D9123AA216D002A79D3 /* SecondItemCollectionView.swift in Sources */,
+				F6783D8923A8DD62002A79D3 /* DetailViewController.swift in Sources */,
 				F64AFC0A23A2447800644952 /* CustomTabBarItem.swift in Sources */,
 				F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */,
+				F6783D8D23AA16E0002A79D3 /* FirstItemColletionView.swift in Sources */,
+				F6783D9923AA21A6002A79D3 /* ForthItemColletionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
