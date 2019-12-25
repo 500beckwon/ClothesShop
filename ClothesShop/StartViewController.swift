@@ -53,7 +53,12 @@ class StartViewController: UIViewController,CustomTabBarItemDelegate, UIScrollVi
         
         pageCollectionView.reloadData()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     @objc func didselectView(_ gesture : UITapGestureRecognizer) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "ADFirstViewController") else { return}
         guard let vc2 = storyboard?.instantiateViewController(withIdentifier: "ADSecondViewController") else { return}
@@ -247,9 +252,7 @@ class PageCollectionCell : UICollectionViewCell {
 
 //MARK: -Self UICustom Func
 extension StartViewController : ThirdItemColletionViewDelegate, SecondItemCollectionViewDelegate,ForthItemColletionViewDelegate, FirstItemColletionViewDelegate {
-    func customContentCell(_ cell:UICollectionViewCell,
-                           _ indexPath: IndexPath)
-                            {
+    func customContentCell(_ cell:UICollectionViewCell, _ indexPath: IndexPath) {
         
         if indexPath.row == 0 {
             cell.addSubview(firstcell)
