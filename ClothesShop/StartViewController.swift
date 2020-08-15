@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class StartViewController: UIViewController,CustomTabBarItemDelegate, UIScrollViewDelegate {
     
     @IBOutlet weak var topMenuCollectionView:UICollectionView!

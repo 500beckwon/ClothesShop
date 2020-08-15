@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB4DCB12E14CE3077A6C0ED2 /* Pods_ClothesShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD71BE2C3B6CAF29F358F28A /* Pods_ClothesShop.framework */; };
 		F6475F9C23B20E42000B756E /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6475F9B23B20E42000B756E /* OptionViewController.swift */; };
 		F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF023A2425500644952 /* AppDelegate.swift */; };
 		F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF223A2425500644952 /* SceneDelegate.swift */; };
@@ -35,9 +36,21 @@
 		F6783D9923AA21A6002A79D3 /* ForthItemColletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D9723AA21A6002A79D3 /* ForthItemColletionView.swift */; };
 		F6783D9A23AA21A6002A79D3 /* ForthItemColletionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6783D9823AA21A6002A79D3 /* ForthItemColletionView.xib */; };
 		F6C0DCFB23AB921700110127 /* DetailFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0DCFA23AB921700110127 /* DetailFunctions.swift */; };
+		F6EA796C24E7CC5E00B30AC9 /* ShopMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA796B24E7CC5E00B30AC9 /* ShopMainController.swift */; };
+		F6EA796E24E7CD9D00B30AC9 /* OptionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA796D24E7CD9D00B30AC9 /* OptionCollectionCell.swift */; };
+		F6EA797224E7CF1E00B30AC9 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797124E7CF1E00B30AC9 /* MainTableViewCell.swift */; };
+		F6EA797424E7CF9B00B30AC9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797324E7CF9B00B30AC9 /* Reusable.swift */; };
+		F6EA797624E7CFBA00B30AC9 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797524E7CFBA00B30AC9 /* UICollectionViewExtension.swift */; };
+		F6EA797824E7CFC800B30AC9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797724E7CFC800B30AC9 /* UITableViewExtension.swift */; };
+		F6EA797A24E7D87000B30AC9 /* AutoScrollCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797924E7D87000B30AC9 /* AutoScrollCollectionView.swift */; };
+		F6EA797C24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797B24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift */; };
+		F6EA797E24E7DF8300B30AC9 /* BanerInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797D24E7DF8300B30AC9 /* BanerInfomation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023D6F21F931B1FB73D475D4 /* Pods-ClothesShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesShop.release.xcconfig"; path = "Target Support Files/Pods-ClothesShop/Pods-ClothesShop.release.xcconfig"; sourceTree = "<group>"; };
+		64091077323EDCBE7498883E /* Pods-ClothesShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesShop.debug.xcconfig"; path = "Target Support Files/Pods-ClothesShop/Pods-ClothesShop.debug.xcconfig"; sourceTree = "<group>"; };
+		BD71BE2C3B6CAF29F358F28A /* Pods_ClothesShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClothesShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6475F9B23B20E42000B756E /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F64AFBED23A2425500644952 /* ClothesShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothesShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64AFBF023A2425500644952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +81,15 @@
 		F6783D9723AA21A6002A79D3 /* ForthItemColletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthItemColletionView.swift; sourceTree = "<group>"; };
 		F6783D9823AA21A6002A79D3 /* ForthItemColletionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForthItemColletionView.xib; sourceTree = "<group>"; };
 		F6C0DCFA23AB921700110127 /* DetailFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFunctions.swift; sourceTree = "<group>"; };
+		F6EA796B24E7CC5E00B30AC9 /* ShopMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMainController.swift; sourceTree = "<group>"; };
+		F6EA796D24E7CD9D00B30AC9 /* OptionCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionCell.swift; sourceTree = "<group>"; };
+		F6EA797124E7CF1E00B30AC9 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		F6EA797324E7CF9B00B30AC9 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		F6EA797524E7CFBA00B30AC9 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		F6EA797724E7CFC800B30AC9 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F6EA797924E7D87000B30AC9 /* AutoScrollCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollCollectionView.swift; sourceTree = "<group>"; };
+		F6EA797B24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollCollectionCell.swift; sourceTree = "<group>"; };
+		F6EA797D24E7DF8300B30AC9 /* BanerInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BanerInfomation.swift; path = ClothesShop/BanerInfomation.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +97,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4DCB12E14CE3077A6C0ED2 /* Pods_ClothesShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4834C4301894796D1F0C003F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD71BE2C3B6CAF29F358F28A /* Pods_ClothesShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78DEC693C7C1CE645EFE7316 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64091077323EDCBE7498883E /* Pods-ClothesShop.debug.xcconfig */,
+				023D6F21F931B1FB73D475D4 /* Pods-ClothesShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F64AFBE423A2425500644952 = {
 			isa = PBXGroup;
 			children = (
 				F64AFBEF23A2425500644952 /* ClothesShop */,
 				F64AFBEE23A2425500644952 /* Products */,
+				78DEC693C7C1CE645EFE7316 /* Pods */,
+				4834C4301894796D1F0C003F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +152,14 @@
 				F64AFC0723A2429800644952 /* Models */,
 				F64AFC0623A2428500644952 /* TabControllers */,
 				F64AFBF623A2425500644952 /* Main.storyboard */,
+				F6EA797924E7D87000B30AC9 /* AutoScrollCollectionView.swift */,
+				F6EA797B24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift */,
+				F6EA796B24E7CC5E00B30AC9 /* ShopMainController.swift */,
+				F6EA796D24E7CD9D00B30AC9 /* OptionCollectionCell.swift */,
+				F6EA797124E7CF1E00B30AC9 /* MainTableViewCell.swift */,
+				F6EA797324E7CF9B00B30AC9 /* Reusable.swift */,
+				F6EA797524E7CFBA00B30AC9 /* UICollectionViewExtension.swift */,
+				F6EA797724E7CFC800B30AC9 /* UITableViewExtension.swift */,
 				F64AFBF923A2425700644952 /* Assets.xcassets */,
 				F6783D8423A8D11B002A79D3 /* 냥1.jpeg */,
 				F6783D8323A8D11B002A79D3 /* 냥2.jpeg */,
@@ -133,6 +183,7 @@
 		F64AFC0723A2429800644952 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6EA797D24E7DF8300B30AC9 /* BanerInfomation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F64AFC0123A2425700644952 /* Build configuration list for PBXNativeTarget "ClothesShop" */;
 			buildPhases = (
+				66A0FC46AFEE3B01F5E365F6 /* [CP] Check Pods Manifest.lock */,
 				F64AFBE923A2425500644952 /* Sources */,
 				F64AFBEA23A2425500644952 /* Frameworks */,
 				F64AFBEB23A2425500644952 /* Resources */,
+				2897EB5F1F992E55561DB311 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,22 +297,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2897EB5F1F992E55561DB311 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClothesShop/Pods-ClothesShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClothesShop/Pods-ClothesShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClothesShop/Pods-ClothesShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A0FC46AFEE3B01F5E365F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClothesShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F64AFBE923A2425500644952 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EA797424E7CF9B00B30AC9 /* Reusable.swift in Sources */,
 				F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */,
 				F6783D9523AA2197002A79D3 /* ThirdItemColletionView.swift in Sources */,
 				F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */,
+				F6EA797824E7CFC800B30AC9 /* UITableViewExtension.swift in Sources */,
+				F6EA797624E7CFBA00B30AC9 /* UICollectionViewExtension.swift in Sources */,
 				F64AFC0523A2427E00644952 /* StartViewController.swift in Sources */,
 				F6783D9123AA216D002A79D3 /* SecondItemCollectionView.swift in Sources */,
 				F6475F9C23B20E42000B756E /* OptionViewController.swift in Sources */,
+				F6EA797A24E7D87000B30AC9 /* AutoScrollCollectionView.swift in Sources */,
 				F6783D8923A8DD62002A79D3 /* DetailViewController.swift in Sources */,
 				F6C0DCFB23AB921700110127 /* DetailFunctions.swift in Sources */,
 				F64AFC0A23A2447800644952 /* CustomTabBarItem.swift in Sources */,
+				F6EA797E24E7DF8300B30AC9 /* BanerInfomation.swift in Sources */,
+				F6EA797224E7CF1E00B30AC9 /* MainTableViewCell.swift in Sources */,
+				F6EA796C24E7CC5E00B30AC9 /* ShopMainController.swift in Sources */,
 				F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */,
 				F6783D8D23AA16E0002A79D3 /* FirstItemColletionView.swift in Sources */,
+				F6EA797C24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift in Sources */,
+				F6EA796E24E7CD9D00B30AC9 /* OptionCollectionCell.swift in Sources */,
 				F6783D9923AA21A6002A79D3 /* ForthItemColletionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +506,7 @@
 		};
 		F64AFC0223A2425700644952 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64091077323EDCBE7498883E /* Pods-ClothesShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,6 +524,7 @@
 		};
 		F64AFC0323A2425700644952 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023D6F21F931B1FB73D475D4 /* Pods-ClothesShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
