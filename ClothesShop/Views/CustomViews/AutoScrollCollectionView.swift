@@ -10,23 +10,23 @@ import Foundation
 import UIKit
 import SnapKit
 let screenWidth = UIScreen.main.bounds.width
-public class AutoScrollCollectionView: UIView, UIScrollViewDelegate {
+internal class AutoScrollCollectionView: UIView, UIScrollViewDelegate {
     
     //터치시 셀의 담긴 정보에 따라 나타나는 게 다름
     //이미지만 보내는게 아닌 링크(문자열url)를 담을것
     //자동 스크롤 만들기
     //스와이프가 발생해도 자동스크롤 진행
-     var count = 0
-    let colors: [UIColor] = [.white,.red,.blue,.brown,.darkGray,.green]
-    var pageCountLabel = UILabel()
-    var imageObject: [UIView]?
-    var numPages: Int = 0
-    var pageControl: UIPageControl?
-    var banerCollectionView: UICollectionView = {
+    private var count = 1
+    private let colors: [UIColor] = [.systemPurple,.red,.blue,.brown,.darkGray,.green]
+    private var pageCountLabel = UILabel()
+    private var numPages: Int = 0
+    private var pageControl: UIPageControl?
+    private var banerCollectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: rect, collectionViewLayout: layout)
+        collectionView.backgroundColor = .white
         return collectionView
     }()
     
@@ -51,7 +51,8 @@ public class AutoScrollCollectionView: UIView, UIScrollViewDelegate {
         banerCollectionView.isUserInteractionEnabled = false
         banerCollectionView.register(AutoScrollCollectionCell.self, forCellWithReuseIdentifier: "AutoScrollCollectionCell")
         banerCollectionView.snp.makeConstraints { make in
-            make.bottom.top.leading.trailing.equalTo(0)
+            make.top.leading.trailing.equalTo(0)
+            make.bottom.equalTo(0).offset(5)
         }
     }
     
@@ -66,35 +67,15 @@ public class AutoScrollCollectionView: UIView, UIScrollViewDelegate {
         pageCountLabel.font = .boldSystemFont(ofSize: 10)
         pageCountLabel.text = "1/\(colors.count)"
         pageCountLabel.snp.makeConstraints { make in
-            make.trailing.equalTo(-5)
+            make.trailing.equalTo(0).offset(-8)
+            make.height.equalTo(12)
             make.bottom.equalTo(-10)
             make.width.equalTo(50)
         }
     }
-    
-    func autoScroll(_ objectCount: Int, _ countLabel: UILabel, _ scrollView: UICollectionView) {
-        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { [weak self] timer in
-            guard let self = self else { return }
-            self.count += 1
-            let pointX = CGFloat(self.count) * screenWidth
-            UIView.animate(withDuration: 1) {
-                if self.count == objectCount {
-                    UIView.animate(withDuration: 1, delay: 1, options: .curveLinear, animations: {
-                        self.count = 0
-                        countLabel.text = "1/\(objectCount)"
-                        scrollView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .right, animated: true)
-                    })
-                } else {
-                let rect = CGRect(x: pointX, y: 0, width: screenWidth, height: screenWidth)
-                scrollView.scrollRectToVisible(rect, animated: true)
-                countLabel.text = "\(self.count+1)/\(objectCount)"
-                }
-            }
-            self.layoutIfNeeded()
-        }
-    }
 }
 
+//MARK:-CollectionDelegate,DataSource
 extension AutoScrollCollectionView: UICollectionViewDelegate, UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return colors.count
@@ -106,7 +87,7 @@ extension AutoScrollCollectionView: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
 }
-
+//MARK:-CollectionLayoutDelegate
 extension AutoScrollCollectionView: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: screenWidth, height: screenWidth)
@@ -122,5 +103,31 @@ extension AutoScrollCollectionView: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+//MARK:-동작함수들
+extension AutoScrollCollectionView {
+    func autoScroll(_ objectCount: Int,  _ countLabel: UILabel, _ scrollView: UICollectionView) {
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            let pointX = CGFloat(self.count) * screenWidth
+            UIView.animate(withDuration: 1) {
+                if self.count == objectCount {
+                    UIView.animate(withDuration: 1, delay: 1, animations: {
+                        self.count = 1
+                        countLabel.text = "1/\(objectCount)"
+                        let rect = CGRect(x: 0, y: 0, width: screenWidth, height: screenWidth)
+                        scrollView.scrollRectToVisible(rect, animated: false)
+                    })
+                } else {
+                    let rect = CGRect(x: pointX, y: 0, width: screenWidth, height: screenWidth)
+                    scrollView.scrollRectToVisible(rect, animated: true)
+                    self.count += 1
+                    countLabel.text = "\(self.count)/\(objectCount)"
+                }
+            }
+            self.layoutIfNeeded()
+        }
     }
 }

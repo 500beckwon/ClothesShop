@@ -11,18 +11,10 @@ import UIKit
 import SnapKit
 
 public class MainTableViewCell: UITableViewCell {
-    var headerView: UIView? {
-        didSet {
-            if headerView != nil {
-                if let _headerView = headerView {
-                    addSubview(_headerView)
-                    _headerView.frame = frame
-                }
-            }
-        }
-    }
+
     override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
     }
     
      public required init?(coder: NSCoder) {

@@ -12,6 +12,7 @@ import SnapKit
 public class ShopMainController: UIViewController {
     
     var autoScrollView = AutoScrollCollectionView()
+    var bestItemView = BasicImageCollectionView()
     var collectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let layout = UICollectionViewFlowLayout()
@@ -23,6 +24,7 @@ public class ShopMainController: UIViewController {
     var tableView: UITableView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let tableView = UITableView(frame:rect, style: .grouped)
+        tableView.backgroundColor = .white
         return tableView
     }()
     
@@ -46,40 +48,30 @@ public class ShopMainController: UIViewController {
         }
     }
     
-    public func setupAutoScrollView() {
-        topOptionScrollView()
-        view.addSubview(autoScrollView)
-        autoScrollView.snp.makeConstraints { make in
-            make.top.equalTo(collectionView.snp.bottom).offset(1)
-            make.leading.trailing.equalTo(0)
-            make.height.equalTo(screenWidth)
-        }
-    }
-    
     public func mainTableView() {
-       // setupAutoScrollView()
          topOptionScrollView()
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        
         tableView.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
         tableView.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalTo(0)
-            make.topMargin.equalTo(collectionView.snp.bottom)
+            make.topMargin.equalTo(collectionView.snp.bottom).offset(10)
         }
     }
 }
 
 extension ShopMainController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: OptionCollectionCell = collectionView.dequeueCell(indexPath: indexPath)
-        cell.backgroundColor = .red
+        cell.backgroundColor = .purple
+       
         return cell
     }
 }
@@ -89,7 +81,6 @@ extension ShopMainController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: 100, height: 40)
     }
 }
-
 
 extension ShopMainController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -107,38 +98,23 @@ extension ShopMainController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainTableViewCell = tableView.dequeueCell(indexPath: indexPath)
         cell.textLabel?.text = "\(indexPath.row + 1)"
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.systemBlue.cgColor
+        if indexPath.row == 1 {
+            cell.contentView.addSubview(bestItemView)
+            bestItemView.snp.makeConstraints { make in
+                make.top.leading.trailing.equalTo(0)
+                make.bottom.equalTo(-10)
+            }
+        }
         return cell
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset.y)
-        if scrollView.contentOffset.y > 50 {
-            tableView.sectionHeaderHeight = 0
-            tableView.headerView(forSection: 0)?.isHidden = true
+        if indexPath.row == 1 {
+            return (screenWidth * 0.85) + 110
+        } else {
+            return 100
         }
     }
-    
-    
-//    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-//        print(scrollView.contentOffset.y,"jdafl;s;af")
-//        if scrollView.contentOffset.y >= 1 {
-//            UIView.animate(withDuration: 0.3) {
-//                self.autoScrollView.snp.updateConstraints { make in
-//                    make.height.equalTo(0)
-//                }
-//                self.view.layoutIfNeeded()
-//            }
-//        } else {
-//            UIView.animate(withDuration: 0.3) {
-//                self.autoScrollView.snp.updateConstraints { make in
-//                    make.height.equalTo(screenWidth)
-//                }
-//                self.view.layoutIfNeeded()
-//            }
-//        }
-//    }
 }
