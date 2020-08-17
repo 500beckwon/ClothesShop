@@ -20,7 +20,6 @@ internal class AutoScrollCollectionView: UIView, UIScrollViewDelegate {
     private let colors: [UIColor] = [.systemPurple,.red,.blue,.brown,.darkGray,.green]
     private var pageCountLabel = UILabel()
     private var numPages: Int = 0
-    private var pageControl: UIPageControl?
     private var banerCollectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let layout = UICollectionViewFlowLayout()

@@ -1,16 +1,24 @@
 PODS:
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - IGListKit (~> 4.0.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - IGListDiffKit
+    - IGListKit
     - SnapKit
 
 SPEC CHECKSUMS:
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a21d547022dea343fba78023e180ba38f7d1c200
+PODFILE CHECKSUM: 220c23f12e39a72b8510ef7dbc781356fdc82bfb
 
 COCOAPODS: 1.9.1

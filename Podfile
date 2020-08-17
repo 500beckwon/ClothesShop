@@ -7,4 +7,5 @@ target 'ClothesShop' do
 
   # Pods for ClothesShop
     pod 'SnapKit', '~> 5.0.0'
+    pod 'IGListKit', '~> 4.0.0'
 end

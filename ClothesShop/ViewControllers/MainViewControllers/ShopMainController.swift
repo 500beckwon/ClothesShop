@@ -13,11 +13,13 @@ public class ShopMainController: UIViewController {
     
     var autoScrollView = AutoScrollCollectionView()
     var bestItemView = BasicImageCollectionView()
+    
     var collectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: rect, collectionViewLayout: layout)
+        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     
@@ -49,16 +51,15 @@ public class ShopMainController: UIViewController {
     }
     
     public func mainTableView() {
-         topOptionScrollView()
+        topOptionScrollView()
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        
         tableView.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
         tableView.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalTo(0)
-            make.topMargin.equalTo(collectionView.snp.bottom).offset(10)
+            make.top.equalTo(collectionView.snp.bottom).offset(10)
         }
     }
 }
@@ -70,9 +71,12 @@ extension ShopMainController: UICollectionViewDataSource, UICollectionViewDelega
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: OptionCollectionCell = collectionView.dequeueCell(indexPath: indexPath)
-        cell.backgroundColor = .purple
-       
+        cell.titleLabel.text = "\(indexPath.row + 1)"
         return cell
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row+1)
     }
 }
 

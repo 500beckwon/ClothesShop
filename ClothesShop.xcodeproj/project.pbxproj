@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AB4DCB12E14CE3077A6C0ED2 /* Pods_ClothesShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD71BE2C3B6CAF29F358F28A /* Pods_ClothesShop.framework */; };
+		F6221FFE24EA962D002010A0 /* BestItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6221FFD24EA962D002010A0 /* BestItemSectionController.swift */; };
+		F622200024EA96B1002010A0 /* BestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6221FFF24EA96B1002010A0 /* BestItem.swift */; };
+		F622200224EA9FEE002010A0 /* BaseSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200124EA9FEE002010A0 /* BaseSectionController.swift */; };
+		F622200424EAA0EC002010A0 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200324EAA0EC002010A0 /* BaseItem.swift */; };
+		F622200624EAA138002010A0 /* BannerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200524EAA138002010A0 /* BannerItem.swift */; };
+		F622200824EAA1DB002010A0 /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200724EAA1DB002010A0 /* NewItem.swift */; };
 		F6475F9C23B20E42000B756E /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6475F9B23B20E42000B756E /* OptionViewController.swift */; };
 		F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF023A2425500644952 /* AppDelegate.swift */; };
 		F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF223A2425500644952 /* SceneDelegate.swift */; };
@@ -57,6 +63,12 @@
 		023D6F21F931B1FB73D475D4 /* Pods-ClothesShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesShop.release.xcconfig"; path = "Target Support Files/Pods-ClothesShop/Pods-ClothesShop.release.xcconfig"; sourceTree = "<group>"; };
 		64091077323EDCBE7498883E /* Pods-ClothesShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesShop.debug.xcconfig"; path = "Target Support Files/Pods-ClothesShop/Pods-ClothesShop.debug.xcconfig"; sourceTree = "<group>"; };
 		BD71BE2C3B6CAF29F358F28A /* Pods_ClothesShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClothesShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6221FFD24EA962D002010A0 /* BestItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestItemSectionController.swift; sourceTree = "<group>"; };
+		F6221FFF24EA96B1002010A0 /* BestItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestItem.swift; sourceTree = "<group>"; };
+		F622200124EA9FEE002010A0 /* BaseSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSectionController.swift; sourceTree = "<group>"; };
+		F622200324EAA0EC002010A0 /* BaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
+		F622200524EAA138002010A0 /* BannerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerItem.swift; sourceTree = "<group>"; };
+		F622200724EAA1DB002010A0 /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
 		F6475F9B23B20E42000B756E /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F64AFBED23A2425500644952 /* ClothesShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothesShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64AFBF023A2425500644952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +145,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F6221FFC24EA95F7002010A0 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6221FFD24EA962D002010A0 /* BestItemSectionController.swift */,
+				F622200124EA9FEE002010A0 /* BaseSectionController.swift */,
+				F6221FFF24EA96B1002010A0 /* BestItem.swift */,
+				F622200524EAA138002010A0 /* BannerItem.swift */,
+				F622200724EAA1DB002010A0 /* NewItem.swift */,
+				F622200324EAA0EC002010A0 /* BaseItem.swift */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
 		F64AFBE423A2425500644952 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +193,7 @@
 				F6EA798024E832C700B30AC9 /* Views */,
 				F6EA798324E8330200B30AC9 /* Prortocols */,
 				F6EA798424E8331000B30AC9 /* Extensions */,
+				F6221FFC24EA95F7002010A0 /* SectionControllers */,
 				F64AFBF923A2425700644952 /* Assets.xcassets */,
 				F6783D8423A8D11B002A79D3 /* 냥1.jpeg */,
 				F6783D8323A8D11B002A79D3 /* 냥2.jpeg */,
@@ -439,19 +465,25 @@
 				F6475F9C23B20E42000B756E /* OptionViewController.swift in Sources */,
 				F6EA797A24E7D87000B30AC9 /* AutoScrollCollectionView.swift in Sources */,
 				F6783D8923A8DD62002A79D3 /* DetailViewController.swift in Sources */,
+				F622200824EAA1DB002010A0 /* NewItem.swift in Sources */,
 				F6C0DCFB23AB921700110127 /* DetailFunctions.swift in Sources */,
+				F622200024EA96B1002010A0 /* BestItem.swift in Sources */,
 				F64AFC0A23A2447800644952 /* CustomTabBarItem.swift in Sources */,
+				F622200624EAA138002010A0 /* BannerItem.swift in Sources */,
 				F6EA797E24E7DF8300B30AC9 /* BanerInfomation.swift in Sources */,
+				F6221FFE24EA962D002010A0 /* BestItemSectionController.swift in Sources */,
 				F6EA797224E7CF1E00B30AC9 /* MainTableViewCell.swift in Sources */,
 				F6EA796C24E7CC5E00B30AC9 /* ShopMainController.swift in Sources */,
 				F6A76E5924E92CB000209A63 /* BasicImageCollectionCell.swift in Sources */,
 				F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */,
 				F6783D8D23AA16E0002A79D3 /* FirstItemColletionView.swift in Sources */,
 				F6EA797C24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift in Sources */,
+				F622200224EA9FEE002010A0 /* BaseSectionController.swift in Sources */,
 				F6A76E5324E83DB600209A63 /* TabView.swift in Sources */,
 				F6A76E5B24E9422900209A63 /* ImageViewCollectionCell.swift in Sources */,
 				F6EA796E24E7CD9D00B30AC9 /* OptionCollectionCell.swift in Sources */,
 				F6783D9923AA21A6002A79D3 /* ForthItemColletionView.swift in Sources */,
+				F622200424EAA0EC002010A0 /* BaseItem.swift in Sources */,
 				F6A76E5524E83E4900209A63 /* TabCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
