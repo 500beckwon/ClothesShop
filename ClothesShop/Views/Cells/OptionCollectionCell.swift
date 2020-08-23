@@ -11,13 +11,7 @@ import UIKit
 import SnapKit
 
 public class OptionCollectionCell: UICollectionViewCell {
-    lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .black
-        label.font = .boldSystemFont(ofSize: 11)
-        label.backgroundColor = .white
-        return label
-    }()
+    lazy var titleLabel = UILabel()
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +24,7 @@ public class OptionCollectionCell: UICollectionViewCell {
     
     public func setupLabel() {
         addSubview(titleLabel)
+        titleLabel.settingOptionLabel()
         titleLabel.snp.makeConstraints { make in
             make.centerX.equalTo(snp.centerX)
             make.centerY.equalTo(snp.centerY)

@@ -10,21 +10,27 @@ import Foundation
 import IGListKit
 
 class BaseItem: ListDiffable {
+    
     private(set) var newItem: [NewItem]
     private(set) var bestItem: [BestItem]
     private(set) var bannerItem: [BannerItem]
-    
-    init(newItem:[NewItem], bestItem: [BestItem], bannerItem: [BannerItem]) {
+    private(set) var dailyItem: [DailyItem]
+    private(set) var updateDate: String
+    private(set) var updateManeger: String
+    init(newItem:[NewItem], bestItem: [BestItem], bannerItem: [BannerItem], dailyItem: [DailyItem] , updateDate: String, updateManeger: String) {
         self.newItem = newItem
         self.bestItem = bestItem
         self.bannerItem = bannerItem
+        self.dailyItem = dailyItem
+        self.updateDate = updateDate
+        self.updateManeger = updateManeger
     }
     
     func diffIdentifier() -> NSObjectProtocol {
-        <#code#>
+        return (updateDate + updateManeger) as NSObject
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        <#code#>
+        return true
     }
 }

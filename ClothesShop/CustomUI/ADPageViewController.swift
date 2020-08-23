@@ -34,7 +34,7 @@ class ADPageViewController:  UIPageViewController , UIPageViewControllerDataSour
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed == true {
             guard let currentTag = pageViewController.viewControllers?.first!.view.tag else { return}
-            appDelegate.startVC?.adPageControl.currentPage = currentTag
+            //appDelegate.startVC?.adPageControl.currentPage = currentTag
         }
     }
     

@@ -14,6 +14,9 @@
 		F622200424EAA0EC002010A0 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200324EAA0EC002010A0 /* BaseItem.swift */; };
 		F622200624EAA138002010A0 /* BannerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200524EAA138002010A0 /* BannerItem.swift */; };
 		F622200824EAA1DB002010A0 /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622200724EAA1DB002010A0 /* NewItem.swift */; };
+		F6456C0424F0F8A5004902C4 /* DailyItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6456C0324F0F8A5004902C4 /* DailyItemCollectionView.swift */; };
+		F6456C0624F0FB06004902C4 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6456C0524F0FB06004902C4 /* UILabelExtension.swift */; };
+		F6456C0824F0FBA9004902C4 /* DailyItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6456C0724F0FBA9004902C4 /* DailyItemSectionController.swift */; };
 		F6475F9C23B20E42000B756E /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6475F9B23B20E42000B756E /* OptionViewController.swift */; };
 		F64AFBF123A2425500644952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF023A2425500644952 /* AppDelegate.swift */; };
 		F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64AFBF223A2425500644952 /* SceneDelegate.swift */; };
@@ -57,6 +60,17 @@
 		F6EA797A24E7D87000B30AC9 /* AutoScrollCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797924E7D87000B30AC9 /* AutoScrollCollectionView.swift */; };
 		F6EA797C24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797B24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift */; };
 		F6EA797E24E7DF8300B30AC9 /* BanerInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA797D24E7DF8300B30AC9 /* BanerInfomation.swift */; };
+		F6EFCDCD24F265980070D377 /* DailyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDCC24F265980070D377 /* DailyItem.swift */; };
+		F6EFCDD024F26A990070D377 /* AllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDCF24F26A990070D377 /* AllModel.swift */; };
+		F6EFCDD224F26D4F0070D377 /* ShopDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDD124F26D4F0070D377 /* ShopDataSource.swift */; };
+		F6EFCDD424F26DC60070D377 /* BannerItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDD324F26DC60070D377 /* BannerItemSectionController.swift */; };
+		F6EFCDD624F26E810070D377 /* IndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDD524F26E810070D377 /* IndexModel.swift */; };
+		F6EFCDDA24F2729A0070D377 /* NewItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDD924F2729A0070D377 /* NewItemSectionController.swift */; };
+		F6EFCDDC24F2737F0070D377 /* ShopModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDDB24F2737F0070D377 /* ShopModelUpdate.swift */; };
+		F6EFCDDE24F27D270070D377 /* BestItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDDD24F27D270070D377 /* BestItemCell.swift */; };
+		F6EFCDE024F27E8D0070D377 /* NewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDDF24F27E8D0070D377 /* NewItemCell.swift */; };
+		F6EFCDE224F27EB90070D377 /* DailyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDE124F27EB90070D377 /* DailyItemCell.swift */; };
+		F6EFCDE424F284D70070D377 /* IGMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFCDE324F284D70070D377 /* IGMainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +83,9 @@
 		F622200324EAA0EC002010A0 /* BaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
 		F622200524EAA138002010A0 /* BannerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerItem.swift; sourceTree = "<group>"; };
 		F622200724EAA1DB002010A0 /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
+		F6456C0324F0F8A5004902C4 /* DailyItemCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyItemCollectionView.swift; sourceTree = "<group>"; };
+		F6456C0524F0FB06004902C4 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		F6456C0724F0FBA9004902C4 /* DailyItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyItemSectionController.swift; sourceTree = "<group>"; };
 		F6475F9B23B20E42000B756E /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F64AFBED23A2425500644952 /* ClothesShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothesShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64AFBF023A2425500644952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +131,17 @@
 		F6EA797924E7D87000B30AC9 /* AutoScrollCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollCollectionView.swift; sourceTree = "<group>"; };
 		F6EA797B24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollCollectionCell.swift; sourceTree = "<group>"; };
 		F6EA797D24E7DF8300B30AC9 /* BanerInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BanerInfomation.swift; path = ClothesShop/BanerInfomation.swift; sourceTree = SOURCE_ROOT; };
+		F6EFCDCC24F265980070D377 /* DailyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyItem.swift; sourceTree = "<group>"; };
+		F6EFCDCF24F26A990070D377 /* AllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllModel.swift; sourceTree = "<group>"; };
+		F6EFCDD124F26D4F0070D377 /* ShopDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDataSource.swift; sourceTree = "<group>"; };
+		F6EFCDD324F26DC60070D377 /* BannerItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerItemSectionController.swift; sourceTree = "<group>"; };
+		F6EFCDD524F26E810070D377 /* IndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexModel.swift; sourceTree = "<group>"; };
+		F6EFCDD924F2729A0070D377 /* NewItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemSectionController.swift; sourceTree = "<group>"; };
+		F6EFCDDB24F2737F0070D377 /* ShopModelUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShopModelUpdate.swift; path = ClothesShop/IGViewModel/ShopModelUpdate.swift; sourceTree = SOURCE_ROOT; };
+		F6EFCDDD24F27D270070D377 /* BestItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestItemCell.swift; sourceTree = "<group>"; };
+		F6EFCDDF24F27E8D0070D377 /* NewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemCell.swift; sourceTree = "<group>"; };
+		F6EFCDE124F27EB90070D377 /* DailyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyItemCell.swift; sourceTree = "<group>"; };
+		F6EFCDE324F284D70070D377 /* IGMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGMainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +176,17 @@
 		F6221FFC24EA95F7002010A0 /* SectionControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F6EFCDD324F26DC60070D377 /* BannerItemSectionController.swift */,
 				F6221FFD24EA962D002010A0 /* BestItemSectionController.swift */,
+				F6456C0724F0FBA9004902C4 /* DailyItemSectionController.swift */,
+				F6EFCDD924F2729A0070D377 /* NewItemSectionController.swift */,
 				F622200124EA9FEE002010A0 /* BaseSectionController.swift */,
 				F6221FFF24EA96B1002010A0 /* BestItem.swift */,
 				F622200524EAA138002010A0 /* BannerItem.swift */,
 				F622200724EAA1DB002010A0 /* NewItem.swift */,
+				F6EFCDCC24F265980070D377 /* DailyItem.swift */,
 				F622200324EAA0EC002010A0 /* BaseItem.swift */,
+				F6EFCDD524F26E810070D377 /* IndexModel.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -189,6 +222,7 @@
 				F64AFC0723A2429800644952 /* Models */,
 				F64AFC0623A2428500644952 /* TabControllers */,
 				F64AFBF623A2425500644952 /* Main.storyboard */,
+				F6EFCDCE24F267DB0070D377 /* IGViewModel */,
 				F6EA797F24E832C300B30AC9 /* ViewControllers */,
 				F6EA798024E832C700B30AC9 /* Views */,
 				F6EA798324E8330200B30AC9 /* Prortocols */,
@@ -277,6 +311,9 @@
 				F6A76E5424E83E4900209A63 /* TabCell.swift */,
 				F6A76E5824E92CB000209A63 /* BasicImageCollectionCell.swift */,
 				F6A76E5A24E9422900209A63 /* ImageViewCollectionCell.swift */,
+				F6EFCDDD24F27D270070D377 /* BestItemCell.swift */,
+				F6EFCDDF24F27E8D0070D377 /* NewItemCell.swift */,
+				F6EFCDE124F27EB90070D377 /* DailyItemCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -288,6 +325,7 @@
 				F6A76E5024E83BE700209A63 /* BestItemCollectionView.swift */,
 				F6A76E5224E83DB600209A63 /* TabView.swift */,
 				F6A76E5624E92B8800209A63 /* BasicImageCollectionView.swift */,
+				F6456C0324F0F8A5004902C4 /* DailyItemCollectionView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -296,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				F6EA797324E7CF9B00B30AC9 /* Reusable.swift */,
+				F6EFCDDB24F2737F0070D377 /* ShopModelUpdate.swift */,
 			);
 			path = Prortocols;
 			sourceTree = "<group>";
@@ -305,6 +344,7 @@
 			children = (
 				F6EA797524E7CFBA00B30AC9 /* UICollectionViewExtension.swift */,
 				F6EA797724E7CFC800B30AC9 /* UITableViewExtension.swift */,
+				F6456C0524F0FB06004902C4 /* UILabelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				F6EA796B24E7CC5E00B30AC9 /* ShopMainController.swift */,
+				F6EFCDE324F284D70070D377 /* IGMainController.swift */,
 			);
 			path = MainViewControllers;
 			sourceTree = "<group>";
@@ -322,6 +363,15 @@
 			children = (
 			);
 			path = SubViewController;
+			sourceTree = "<group>";
+		};
+		F6EFCDCE24F267DB0070D377 /* IGViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFCDCF24F26A990070D377 /* AllModel.swift */,
+				F6EFCDD124F26D4F0070D377 /* ShopDataSource.swift */,
+			);
+			path = IGViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +507,7 @@
 				F6783D9523AA2197002A79D3 /* ThirdItemColletionView.swift in Sources */,
 				F6A76E5124E83BE700209A63 /* BestItemCollectionView.swift in Sources */,
 				F64AFBF323A2425500644952 /* SceneDelegate.swift in Sources */,
+				F6EFCDE024F27E8D0070D377 /* NewItemCell.swift in Sources */,
 				F6EA797824E7CFC800B30AC9 /* UITableViewExtension.swift in Sources */,
 				F6EA797624E7CFBA00B30AC9 /* UICollectionViewExtension.swift in Sources */,
 				F6A76E5724E92B8800209A63 /* BasicImageCollectionView.swift in Sources */,
@@ -468,18 +519,31 @@
 				F622200824EAA1DB002010A0 /* NewItem.swift in Sources */,
 				F6C0DCFB23AB921700110127 /* DetailFunctions.swift in Sources */,
 				F622200024EA96B1002010A0 /* BestItem.swift in Sources */,
+				F6456C0624F0FB06004902C4 /* UILabelExtension.swift in Sources */,
 				F64AFC0A23A2447800644952 /* CustomTabBarItem.swift in Sources */,
+				F6EFCDDC24F2737F0070D377 /* ShopModelUpdate.swift in Sources */,
+				F6EFCDCD24F265980070D377 /* DailyItem.swift in Sources */,
 				F622200624EAA138002010A0 /* BannerItem.swift in Sources */,
+				F6EFCDE224F27EB90070D377 /* DailyItemCell.swift in Sources */,
+				F6EFCDD224F26D4F0070D377 /* ShopDataSource.swift in Sources */,
 				F6EA797E24E7DF8300B30AC9 /* BanerInfomation.swift in Sources */,
+				F6EFCDE424F284D70070D377 /* IGMainController.swift in Sources */,
 				F6221FFE24EA962D002010A0 /* BestItemSectionController.swift in Sources */,
 				F6EA797224E7CF1E00B30AC9 /* MainTableViewCell.swift in Sources */,
 				F6EA796C24E7CC5E00B30AC9 /* ShopMainController.swift in Sources */,
+				F6EFCDD624F26E810070D377 /* IndexModel.swift in Sources */,
+				F6456C0824F0FBA9004902C4 /* DailyItemSectionController.swift in Sources */,
 				F6A76E5924E92CB000209A63 /* BasicImageCollectionCell.swift in Sources */,
 				F6783D7D23A6BE49002A79D3 /* ADPageViewController.swift in Sources */,
 				F6783D8D23AA16E0002A79D3 /* FirstItemColletionView.swift in Sources */,
 				F6EA797C24E7DCDE00B30AC9 /* AutoScrollCollectionCell.swift in Sources */,
 				F622200224EA9FEE002010A0 /* BaseSectionController.swift in Sources */,
+				F6EFCDD424F26DC60070D377 /* BannerItemSectionController.swift in Sources */,
 				F6A76E5324E83DB600209A63 /* TabView.swift in Sources */,
+				F6456C0424F0F8A5004902C4 /* DailyItemCollectionView.swift in Sources */,
+				F6EFCDD024F26A990070D377 /* AllModel.swift in Sources */,
+				F6EFCDDA24F2729A0070D377 /* NewItemSectionController.swift in Sources */,
+				F6EFCDDE24F27D270070D377 /* BestItemCell.swift in Sources */,
 				F6A76E5B24E9422900209A63 /* ImageViewCollectionCell.swift in Sources */,
 				F6EA796E24E7CD9D00B30AC9 /* OptionCollectionCell.swift in Sources */,
 				F6783D9923AA21A6002A79D3 /* ForthItemColletionView.swift in Sources */,

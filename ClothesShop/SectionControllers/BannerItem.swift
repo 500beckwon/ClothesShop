@@ -13,11 +13,12 @@ class BannerItem: ListDiffable {
     private(set) var itemImageURL: String
     private(set) var uploadDate: String
     private(set) var itemName: String
-    
-    init(itemImageURL:String,uploadDate: String, itemName:String) {
+    private(set) var itemTag: String
+    init(itemImageURL:String,uploadDate: String, itemName:String, itemTag: String) {
         self.itemImageURL = itemImageURL
         self.uploadDate = uploadDate
         self.itemName = itemName
+        self.itemTag = itemTag
     }
     
     func diffIdentifier() -> NSObjectProtocol {
@@ -25,7 +26,9 @@ class BannerItem: ListDiffable {
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        guard let object = object as? BestItem else { return false }
+        print((itemName + uploadDate))
+        guard let object = object as? BannerItem else { return false }
+        print(object.itemName + object.uploadDate)
         return (itemName + uploadDate) == (object.itemName + object.uploadDate)
     }
     

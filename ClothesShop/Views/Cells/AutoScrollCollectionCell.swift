@@ -9,14 +9,15 @@
 import Foundation
 import SnapKit
 import UIKit
+import IGListKit
 
-public class AutoScrollCollectionCell: UICollectionViewCell {
+public class AutoScrollCollectionCell: UICollectionViewCell, ListBindable {
     
     var banerImageView = UIImageView()
-    
+    var titleLabel = UILabel()
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        setupImageView()
+        setupTitleLabel()
     }
     
     public required init?(coder: NSCoder) {
@@ -31,6 +32,22 @@ public class AutoScrollCollectionCell: UICollectionViewCell {
         banerImageView.layer.cornerRadius = 8
         banerImageView.snp.makeConstraints { make in
             make.top.bottom.leading.trailing.equalTo(0)
+        }
+    }
+    
+    public func setupTitleLabel() {
+        setupImageView()
+        addSubview(titleLabel)
+        titleLabel.settingOptionLabel()
+        titleLabel.snp.makeConstraints { make in
+            make.centerY.equalTo(snp.centerY)
+            make.centerX.equalTo(snp.centerX)
+        }
+    }
+    
+    public func bindViewModel(_ viewModel: Any) {
+        if let _viewModel = viewModel as? BannerItem {
+            titleLabel.text = _viewModel.itemName
         }
     }
 }

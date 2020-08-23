@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        let vc = UINavigationController(rootViewController: ShopMainController())
+        let vc = UINavigationController(rootViewController: IGMainController())
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

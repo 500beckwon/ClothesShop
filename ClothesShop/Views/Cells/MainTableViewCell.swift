@@ -11,7 +11,6 @@ import UIKit
 import SnapKit
 
 public class MainTableViewCell: UITableViewCell {
-
     override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none

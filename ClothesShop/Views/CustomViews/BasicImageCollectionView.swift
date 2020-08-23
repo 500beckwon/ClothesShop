@@ -16,7 +16,9 @@ public class BasicImageCollectionView: UIView {
             collectionView.reloadData()
         }
     }
+    
     var colors:[UIColor] = [.red,.systemBlue,.systemGray,.systemFill,.green,.systemPurple,.systemPink]
+    
     lazy var tabView = TabView()
     lazy var collectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)

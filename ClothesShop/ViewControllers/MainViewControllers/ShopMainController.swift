@@ -9,11 +9,16 @@
 import Foundation
 import UIKit
 import SnapKit
+import IGListKit
+
 public class ShopMainController: UIViewController {
-    
-    var autoScrollView = AutoScrollCollectionView()
-    var bestItemView = BasicImageCollectionView()
-    
+    lazy var autoScrollView = AutoScrollCollectionView()
+    lazy var bestItemView = BasicImageCollectionView()
+    lazy var adapter: ListAdapter = {
+        return ListAdapter (updater: ListAdapterUpdater(),
+                            viewController: self,
+                            workingRangeSize: 0)
+    }()
     var collectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)
         let layout = UICollectionViewFlowLayout()
@@ -56,6 +61,8 @@ public class ShopMainController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        adapter.dataSource = self
+        
         tableView.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
         tableView.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalTo(0)
@@ -64,6 +71,7 @@ public class ShopMainController: UIViewController {
     }
 }
 
+//MARK:- CollectionView Delegate
 extension ShopMainController: UICollectionViewDataSource, UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -86,6 +94,7 @@ extension ShopMainController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+//MARK: -TableView Delegate
 extension ShopMainController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return autoScrollView
@@ -120,5 +129,25 @@ extension ShopMainController: UITableViewDelegate, UITableViewDataSource {
         } else {
             return 100
         }
+    }
+}
+
+extension ShopMainController: ListAdapterDataSource {
+    public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        return AllModel.objects
+    }
+    
+    public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        switch object {
+        case is BannerItem: return BannerItemSectionController()
+        case is DailyItem: return DailyItemSectionController()
+        case is BestItem: return BestItemSectionController()
+        case is NewItem: return NewItemSectionController()
+        default: return ListSectionController()
+        }
+    }
+    
+    public func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        return nil
     }
 }

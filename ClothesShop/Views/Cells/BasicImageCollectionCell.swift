@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import SnapKit
 public class BasicImageCollectionCell: UICollectionViewCell {
+    var colors:[UIColor] = [.systemBlue,.systemGray,.systemFill,.green,.brown,.systemPink]
     
     lazy var imageView: UIImageView = {
        let imageView = UIImageView()
@@ -28,9 +29,6 @@ public class BasicImageCollectionCell: UICollectionViewCell {
            collectionView.backgroundColor = .white
            return collectionView
        }()
-    
-    var colors:[UIColor] = [.systemBlue,.systemGray,.systemFill,.green,.brown,.systemPink]
-
     
     override public init(frame: CGRect) {
         super.init(frame: frame)

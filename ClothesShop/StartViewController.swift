@@ -42,7 +42,6 @@ class StartViewController: UIViewController,CustomTabBarItemDelegate, UIScrollVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        appDelegate.startVC = self
         scrollView.delegate = self
        
         setupPageCollectionView()
